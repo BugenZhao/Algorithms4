@@ -11,17 +11,17 @@ public class ListNode<Item> implements Iterable<Item> {
         Node next;
     }
 
-    private Node fore_first;
+    private Node foreFirst;
     private Node last;
     private int N;
 
     public ListNode() {
         last = new Node();
-        fore_first = last;
+        foreFirst = last;
     }
 
     public boolean isEmpty() {
-        return fore_first.next == null;
+        return foreFirst.next == null;
     }
 
     public int size() {
@@ -29,11 +29,11 @@ public class ListNode<Item> implements Iterable<Item> {
     }
 
     public void push(Item item) {
-        Node old_last = last;
+        Node oldLast = last;
         last = new Node();
         last.item = item;
         last.next = null;
-        old_last.next = last;
+        oldLast.next = last;
         ++N;
     }
 
@@ -43,7 +43,7 @@ public class ListNode<Item> implements Iterable<Item> {
     }
 
     private class ListIterator implements Iterator<Item> {
-        private Node current = fore_first.next;
+        private Node current = foreFirst.next;
 
         public boolean hasNext() {
             return current != null;

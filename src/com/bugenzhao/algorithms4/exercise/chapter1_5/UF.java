@@ -22,5 +22,5 @@ abstract public class UF {
 
     abstract public int find(int p);
 
-    abstract void union(int p, int q);
+    abstract public void union(int p, int q);
 }

@@ -6,7 +6,7 @@ public class HashSET<Key> extends SET<Key> {
 
     private LinearProbingHashST<Key, Boolean> st;
 
-    HashSET() {
+    public HashSET() {
         st = new LinearProbingHashST<>();
     }
 

@@ -12,7 +12,7 @@ public class WeightedQuickUnionUF extends QuickUnionUF {
     }
 
     @Override
-    void union(int p, int q) {
+    public void union(int p, int q) {
         int pRoot = find(p);
         int qRoot = find(q);
         if (pRoot == qRoot) return;

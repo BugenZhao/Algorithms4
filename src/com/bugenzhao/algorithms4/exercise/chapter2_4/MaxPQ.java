@@ -30,7 +30,7 @@ public class MaxPQ<Key extends Comparable<Key>> {
 
     public static void main(String[] args) {
         Integer integer;
-        MaxPQ<Integer> maxPQ = new MaxPQ<>(new Integer[]{1, 2, 3, 4});
+        MaxPQ<Integer> maxPQ = new MaxPQ<>();
         while (true) {
             integer = StdIn.readInt();
             if (integer == 0) maxPQ.delMax();
