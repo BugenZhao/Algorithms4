@@ -21,5 +21,10 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+<<<<<<< HEAD
 
 !algs4.jar
+
+data/*
+=======
+>>>>>>> parent of 166cc8c... 6.9.2019 Update
