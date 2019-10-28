@@ -22,9 +22,11 @@ public class BreadthFirstPaths extends Paths {
         while (!queue.isEmpty()) {
             int v = queue.dequeue();
             for (int w : G.adj(v)) {
-                edgeTo[w] = v;
-                marked[w] = true;
-                queue.enqueue(w);
+                if (!marked[w]) {
+                    edgeTo[w] = v;
+                    marked[w] = true;
+                    queue.enqueue(w);
+                }
             }
         }
     }
